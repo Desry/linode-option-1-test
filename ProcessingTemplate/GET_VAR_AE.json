@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_LB",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":PSET &VAR1 = GET_VAR(DES_KVS,FOR_EACH_JSON,1)\n:PRINT &VAR1"
+  }
+}
