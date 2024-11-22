@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_DES",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":SET &MYTEXT = \"asd\"\n:PUBLISH &MYTEXT,,TOP\n:PSET &YOURTEXT = \"asd2\"\n:SET &RET# = ACTIVATE_UC_OBJECT(\"set_ctx_var\", ,\"2021-03-19\",\"UTC\", , ,PASS_VALUES,,\"Alias_1\")"
+  }
+}
