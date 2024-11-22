@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_CM",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":SET &PREV_RUN_ID# = SYS_ACT_PREV_NR()\n:PRINT &PREV_RUN_ID#\n\n"
+  }
+}

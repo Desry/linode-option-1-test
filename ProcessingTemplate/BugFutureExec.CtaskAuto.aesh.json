@@ -1,0 +1,19 @@
+{
+  "node": "LINUX_DES",
+  "owner": "MSLEBODN",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "tags": 
+  [
+    "AcocTest"
+  ],
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": "\n:SET &ACTOBJ# = ACTIVATE_UC_OBJECT(STATUS)"
+  }
+}

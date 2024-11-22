@@ -1,0 +1,25 @@
+{
+  "node": "LINUX_DES",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":SET &ACTIVATE_UC_OBJECT_SET_CTX_VAR = ACTIVATE_UC_OBJECT('set_ctx_var',,'2024-03-06','Asia/Manila',,PASS_VALUES,,'SET_CTX_VAR_TASK')\necho \"PID\": &ACTIVATE_UC_OBJECT_SET_CTX_VAR"
+  },
+  "designParameters": 
+  [
+    {
+      "allowExpressions": true,
+      "defaultValue": "param 1 value",
+      "editorType": "TEXT",
+      "name": "PARAM_1",
+      "title": "PARAM_1"
+    }
+  ]
+}

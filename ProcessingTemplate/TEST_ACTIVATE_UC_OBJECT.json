@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_CM",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":PSET  &VM_STATUS_UPDATE# = 5\n\n:SET &HND# = PREP_PROCESS_VAR(&VM_T_RELATION_ACTION#)\n\n:PROCESS &HND#\n\n: SET &ACTION# = GET_PROCESS_LINE(&HND#, 2)\n\n: PSET &VM_AFFECTED_CI# = GET_PROCESS_LINE(&HND#, 1)\n\n: SWITCH &ACTION#\n\n:   CASE \"UPDATE_STATUS\"\n\n:     SET &RET# = ACTIVATE_UC_OBJECT(\"wait_5s\",,,,,PASS_VALUES)\n\n:   CASE \"UPDATE_SERVER\"\n\n:     SET &RET# = ACTIVATE_UC_OBJECT(\"wait_5s\",,,,,PASS_VALUES)\n\n: ENDSWITCH\n\n:ENDPROCESS"
+  }
+}

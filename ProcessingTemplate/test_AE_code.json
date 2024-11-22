@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_DES",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":SET &hello=\"HELLO,WORLD!\"\n:PRINT \"&hello\"\n\necho \"&hello\"\n#This is a comment\n\n:SET &body=${body}\n:PRINT \"Mix script var with ANOW var\"\n\necho \"&body\"\n\n#This is another comment\n\n:SET &bye=\"BYE,WORLD!\"\n:PRINT \"&bye\"\n\necho \"&bye\"\necho \"&bye\"\n\n#add this comment"
+  }
+}
