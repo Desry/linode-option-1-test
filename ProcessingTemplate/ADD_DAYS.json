@@ -1,0 +1,15 @@
+{
+  "node": "LINUX_DES",
+  "owner": "api_user",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "LINUX",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "taskType": "AE_SHELL_SCRIPT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "script": ":SET &CURRENT_DATE = SYS_DATE_PHYSICAL()\n:SET &FUTURE_DATE = ADD_DAYS('240406', 2, 'AE_CAL')\n:PRINT &FUTURE_DATE "
+  }
+}
